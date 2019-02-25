@@ -6,7 +6,15 @@
   right: 0;
   height: 38.2%;
 }
-ul {
+
+#logo {
+  position: absolute;
+  height: 20.525925925925925925925925925926%;
+  width: 73.8921875%;
+  top: 9.7222222222222222222222222222222%;
+  left: 13.072916666666666666666666666667%;
+}
+x ul {
   list-style-type: none;
   margin: 0;
   padding: 0;

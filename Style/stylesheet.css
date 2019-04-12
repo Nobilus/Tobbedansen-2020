@@ -1,9 +1,9 @@
 #banner {
   position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
+  max-width: 100%;
+  top: 0%;
+  left: 0%;
   height: 38.2%;
 }
 
@@ -11,6 +11,7 @@
   position: absolute;
   height: 20.525925925925925925925925925926%;
   width: 73.8921875%;
+  max-width: 100%;
   top: 9.7222222222222222222222222222222%;
   left: 13.072916666666666666666666666667%;
 }

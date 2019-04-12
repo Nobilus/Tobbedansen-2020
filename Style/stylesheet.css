@@ -1,10 +1,12 @@
-#banner {
-  position: absolute;
+body {
+  background: url('../img/MachelenPut.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 38.2%;
+  background-size: cover;
 }
 
 #logo {
@@ -14,14 +16,15 @@
   top: 9.7222222222222222222222222222222%;
   left: 13.072916666666666666666666666667%;
 }
-x ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000000;
+
+ul {
+  display: flex;
 }
 
-li {
-  float: left;
+html {
+  background: url('../img/MachelenPut2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

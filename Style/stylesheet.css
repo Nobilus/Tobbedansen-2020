@@ -48,13 +48,14 @@ body {
   margin: 0;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 3.02083333333%;
-  width: 100%;
+.footer {
+  display: flex;
+  align-items: baseline;
+  align-content: flex-end;
+  justify-content: center;
+
+  /* height: 3.02083333333%;
+  width: 100%; */
   background-color: #f9f9f9;
   color: #707070;
-  text-align: center;
 }

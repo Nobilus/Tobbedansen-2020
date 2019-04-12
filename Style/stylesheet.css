@@ -1,4 +1,4 @@
-body {
+.banner {
   background: url('../img/MachelenPut.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,11 +18,26 @@ body {
   left: 13.072916666666666666666666666667%;
 }
 
-ul {
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: black;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
-html {
+.background {
   background: url('../img/MachelenPut2.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

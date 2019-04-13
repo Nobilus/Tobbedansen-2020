@@ -1,6 +1,6 @@
 window.onload = function() {
   // Month Day, Year Hour:Minute:Second, id-of-element-container
-  countDownToTime('2019-08-31T12:00:00', 'countdown1'); // ****** Change this line!
+  countDownToTime('08 30, 2019 12:00:00', 'countdown1'); // ****** Change this line!
 };
 function countDownToTime(countTo, id) {
   countTo = new Date(countTo).getTime();

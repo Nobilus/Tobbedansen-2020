@@ -22,9 +22,18 @@
   display: block;
   padding: 1em;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.navigation a:hover {
+a,
+a:active,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
   text-decoration: underline;
 }
 
@@ -54,10 +63,15 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: center;
   height: 3.02083333333%;
+  display: flex;
 
   /*kleurekes */
   background-color: #f9f9f9;
   color: #707070;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

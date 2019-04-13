@@ -36,7 +36,8 @@
   background-size: cover;
 }
 .banner {
-  background: url('../img/MachelenPut.jpg') no-repeat fixed;
+  background: url('../img/MachelenPut.jpg') no-repeat top center fixed;
+  background-size: 100%;
   max-width: 100%;
   max-height: 38.2%;
 }
@@ -49,13 +50,14 @@ body {
 }
 
 .footer {
-  display: flex;
-  align-items: baseline;
-  align-content: flex-end;
-  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 3.02083333333%;
 
-  /* height: 3.02083333333%;
-  width: 100%; */
+  /*kleurekes */
   background-color: #f9f9f9;
   color: #707070;
 }

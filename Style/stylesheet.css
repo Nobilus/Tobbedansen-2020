@@ -78,3 +78,15 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.navbar-nav > li {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  display: block;
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}

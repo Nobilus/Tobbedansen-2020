@@ -37,7 +37,10 @@ body {
   text-align: center;
 }
 
+.footer-container {
+  position: relative;
+}
+
 i {
   color: #a3a3a3;
 }
-

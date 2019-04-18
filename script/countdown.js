@@ -23,4 +23,4 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById('countdown').innerHTML = 'EXPIRED';
   }
-}, 1000);
+});

@@ -13,6 +13,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Dateîcker -->
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style/custom.css" />
     <!-- Icons -->
@@ -67,6 +70,68 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.* Donec ultricies* semper lobortis. Mauris facilisis tempor mattis. In ultricies lacus eget augue tempus commodo. Quisque ut turpis vel lectus vehicula dapibus eget quis ex. Aenean ac risus in tellus scelerisque dictum. Pellentesque pretium ligula quis interdum ultrices. Proin vehicula vehicula tincidunt. Sed vitae metus mauris. Etiam lacinia, augue at lobortis feugiat, turpis sapien facilisis orci, eget feugiat odio ante vitae lorem. Vestibulum dignissim pharetra odio, in tristique eros fringilla quis. Proin ante lectus, sagittis in tortor nec, varius mattis orci. Quisque sit amet placerat mi. In non risus sed augue elementum imperdiet in eget dolor. Quisque mi diam, pharetra et mattis at, ultricies aliquet ante. Ut ac quam nulla. In vitae mattis odio, ut pulvinar sapien. Proin efficitur tellus eu enim convallis tincidunt. Aenean nec laoreet turpis, vel commodo leo. In pretium tortor at tellus sodales sodales. Pellentesque elit dolor, mattis et pretium eget, faucibus nec massa.
           </p>
         </div>
+        <div>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfTsfhlNtihs1ksb4VaKDfJrW3sC6coOjpmbv6nJb6dnIKXmA/formResponse" method="POST">
+            <fieldset>
+              <legend>Algemenen info</legend>
+              <div>
+                <label for="entry.1590447953">Voornaam*</label>
+                <input type="text" name="entry.1590447953" required>
+              </div>
+              <div>
+                <label for="entry.609469685">Naam*</label>
+                <input type="text" name="entry.609469685" required>
+              </div>
+              <div>
+                <label for="entry.1256978498">Email*</label>
+                <input type="email" name="entry.1256978498" required>
+              </div>
+              <div>
+                <label for="entry.1319474406">Telefoon*</label>
+                <input type="tel" placeholder="0412345678" name="entry.1319474406" minlength="10" maxlength="10" required>
+              </div>
+              <div>
+                <label for="entry.1052038244">Gemeente*</label>
+                <input type="text" name="entry.1052038244" required>
+              </div>
+              <div>
+                <label for="entry.1647528450">Postcode*</label>
+                <input type="text" name="entry.1647528450" required>
+              </div>
+              <div>
+                <label for="entry.1364363486">Adres*</label>
+                <input type="text" name="entry.1364363486" required>
+              </div>
+              <div>
+                <label for="entry.438875400">Geboortedatum*</label>
+                <input type="text" id="datepicker" name="entry.438875400" autocomplete="off" required>
+              </div>
+              <div>
+                <label for="entry.1621228601">Geboorteplaats*</label>
+                <input type="text" name="entry.1621228601" required>
+              </div>
+              <button type="button" id="btnAdd">Deelnemer toevoegen</button>
+              <button type="button" id="btnRemove">Deelnemer verwijderen</button>
+              <div id="extra"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Tobbe info</legend>
+              <div>
+                <label for="entry.1437388782">Naam tobbe*</label>
+                <input type="text" name="entry.1437388782" required>
+              </div>
+              <div>
+                <label for="entry.1534265697">Naam vereniging*</label>
+                <input type="text" name="entry.1534265697" required>
+              </div>
+              <div>
+                <label for="entry.184036302">Aanvinken als je met een kajak gaat</label>
+                <input type="checkbox" name="entry.184036302">
+              </div>
+            </fieldset>
+            <button type="submit" id="btnInschrijven">Schrijf me in</button>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -83,4 +148,5 @@
       </div>
     </footer>
   </body>
+  <script src="script/main.js"></script>
 </html>

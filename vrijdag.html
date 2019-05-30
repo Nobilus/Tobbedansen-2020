@@ -4,19 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tobbedansen | Vrijdag</title>
+    <title>Tobbedansen | Home</title>
 
-    <!-- Fontface -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,700" rel="stylesheet" />
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style/custom.css" />
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
     <!-- Favicons -->
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
     <link href="img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
@@ -25,35 +17,37 @@
     <link href="img/safari-pinned-tab.svg" rel="mask-icon" />
     <meta content="#ffffff" name="msapplication-TileColor" />
     <meta content="#ffffff" name="theme-color" />
+
+    <!-- Countdown Script -->
+    <script language="javascript" src="script/countdown.js" type="text/javascript"></script>
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/screen.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-      <button class="navbar-toggler ml-auto" data-target="#collapse_target" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="collapse_target">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="index.html" tabindex="1">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="vrijdag.html" tabindex="2">Vrijdag</a>
-          </li>
-          <li class="nav-item">
-            <a href="zaterdag.html" tabindex="3">Zaterdag</a>
-          </li>
-          <li class="nav-item">
-            <a href="info.html" tabindex="4">Info</a>
-          </li>
-          <li class="nav-item">
-            <a href="inschrijvingen.html" tabindex="5">Inschrijvingen</a>
-          </li>
-        </ul>
+    <header class="u-max-width-none u-pt-clear ">
+      <div class="o-container">
+        <div class="c-header u-mb-xl">
+          <div class="c-header__nav">
+            <nav class="c-nav ">
+              <ul class="o-list c-nav__list ">
+                <li class="c-nav__item"><a href="index.html" class="c-nav__link" tabindex="1">Home</a></li>
+                <li class="c-nav__item"><a href="vrijdag.html" class="c-nav__link" tabindex="2">Vrijdag</a></li>
+                <li class="c-nav__item"><a href="zaterdag.html" class="c-nav__link" tabindex="3">Zaterdag</a></li>
+                <li class="c-nav__item"><a href="info.html" class="c-nav__link" tabindex="4">Info</a></li>
+                <li class="c-nav__item"><a href="inschrijvingen.html" class="c-nav__link" tabindex="5">Inschrijvingen</a></li>
+                <li class="c-nav__item"><a href="contact.html" class="c-nav__link" tabindex="6">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
-    </nav>
+    </header>
 
-    <!-- Make image banner -->
-    <div class="jumbotron">
-      <div class="container"></div>
+    <div class="c-banner">
+      <div class="o-banner__image"></div>
     </div>
 
     <!-- content goes here -->
@@ -64,7 +58,12 @@
         </div>
         <div class="col-5 text-center align-self-center">
           <p class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.* Donec ultricies* semper lobortis. Mauris facilisis tempor mattis. In ultricies lacus eget augue tempus commodo. Quisque ut turpis vel lectus vehicula dapibus eget quis ex. Aenean ac risus in tellus scelerisque dictum. Pellentesque pretium ligula quis interdum ultrices. Proin vehicula vehicula tincidunt. Sed vitae metus mauris. Etiam lacinia, augue at lobortis feugiat, turpis sapien facilisis orci, eget feugiat odio ante vitae lorem. Vestibulum dignissim pharetra odio, in tristique eros fringilla quis. Proin ante lectus, sagittis in tortor nec, varius mattis orci. Quisque sit amet placerat mi. In non risus sed augue elementum imperdiet in eget dolor. Quisque mi diam, pharetra et mattis at, ultricies aliquet ante. Ut ac quam nulla. In vitae mattis odio, ut pulvinar sapien. Proin efficitur tellus eu enim convallis tincidunt. Aenean nec laoreet turpis, vel commodo leo. In pretium tortor at tellus sodales sodales. Pellentesque elit dolor, mattis et pretium eget, faucibus nec massa.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.* Donec ultricies* semper lobortis. Mauris facilisis tempor mattis. In ultricies lacus eget augue tempus commodo. Quisque ut turpis
+            vel lectus vehicula dapibus eget quis ex. Aenean ac risus in tellus scelerisque dictum. Pellentesque pretium ligula quis interdum ultrices. Proin vehicula vehicula tincidunt. Sed vitae
+            metus mauris. Etiam lacinia, augue at lobortis feugiat, turpis sapien facilisis orci, eget feugiat odio ante vitae lorem. Vestibulum dignissim pharetra odio, in tristique eros fringilla
+            quis. Proin ante lectus, sagittis in tortor nec, varius mattis orci. Quisque sit amet placerat mi. In non risus sed augue elementum imperdiet in eget dolor. Quisque mi diam, pharetra et
+            mattis at, ultricies aliquet ante. Ut ac quam nulla. In vitae mattis odio, ut pulvinar sapien. Proin efficitur tellus eu enim convallis tincidunt. Aenean nec laoreet turpis, vel commodo
+            leo. In pretium tortor at tellus sodales sodales. Pellentesque elit dolor, mattis et pretium eget, faucibus nec massa.
           </p>
         </div>
       </div>
@@ -82,5 +81,11 @@
         </p>
       </div>
     </footer>
+
+    <div id="container">
+      <div id="header"></div>
+      <div id="body"></div>
+      <div id="header"></div>
+    </div>
   </body>
 </html>

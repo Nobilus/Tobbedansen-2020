@@ -87,8 +87,31 @@ h1 {
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
   font-size: 112px;
-  position: absolute;
-  top: 77%;
-  left: 25%;
-  margin: 0 0 0;
+  /* position: absolute; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  height: 70vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.countdown-item {
+  /* margin-right: 25px; */
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  #countdown {
+    width: 100%;
+    margin: unset;
+    height: 80vh;
+    font-size: 70px;
+    align-content: center;
+  }
+  .countdown-item {
+    width: 100%;
+  }
 }

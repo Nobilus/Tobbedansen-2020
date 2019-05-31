@@ -168,20 +168,21 @@ hr {
   margin: 0 0 24px;
 }
 
-a {
-  color: RoyalBlue;
-  transition: all 0.1s ease-in-out;
-}
-
 a:visited,
 a:active {
-  color: BlueViolet;
+  color: white;
 }
 
 a:hover,
 a:focus {
-  color: Crimson;
+  color: White;
 }
+
+u {
+  text-decoration: none;
+  border-bottom: 3px solid white;
+}
+​
 
 /*
     Objects: section
@@ -595,18 +596,54 @@ a:focus {
 */
 .c-header {
   background-color: #343a40;
+  max-width: 100vw;
 }
-.c-header__nav {
-  display: block;
+
+@media (min-width: 992px) {
+  .c-header__nav {
+    display: block;
+  }
 }
-/* 
-label {
-  margin: 0 40px 0 0;
+.c-nav__hamburger {
+  margin-left: 20px;
+  font-size: 26px;
+  line-height: 70px;
   display: none;
-} */
+  color: white;
+  width: 26px;
+}
 #toggle {
   display: none;
 }
+
+@media only screen and (max-width: 992px) {
+  .c-nav__hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .c-nav__list {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .c-nav__list .c-nav__link {
+    display: block;
+    margin: 0;
+    border-top: 1px black solid;
+  }
+  #toggle:checked + .c-nav__list {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .c-nav__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
 /* 
 @media only screen and (max-width: 500px) {
   label {
@@ -625,8 +662,7 @@ label {
 }
 
 .c-nav__list {
-  display: flex;
-  justify-content: flex-start;
+  margin: 0 30px 0 0;
 }
 
 .c-nav__link {
@@ -634,16 +670,12 @@ label {
   display: block;
   padding: 0.5rem 1rem;
 }
-.c-nav__link,
-.c-nav__link:visited,
-.c-nav__link:active {
-  color: white;
-}
 
 .c-nav__link:hover,
 .c-nav__link:focus {
   color: white;
 }
+
 /*
   Utility classes
   ---
@@ -659,17 +691,15 @@ label {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
   .u-bg-picture {
     background-image: url('../img/MachelenPut-desktop.png');
     size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
   }
 }
 

@@ -4,19 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tobbedansen | Zaterdag</title>
+    <title>Tobbedansen - Zaterdag</title>
 
-    <!-- Fontface -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,700" rel="stylesheet" />
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style/custom.css" />
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
     <!-- Favicons -->
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
     <link href="img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
@@ -25,62 +17,81 @@
     <link href="img/safari-pinned-tab.svg" rel="mask-icon" />
     <meta content="#ffffff" name="msapplication-TileColor" />
     <meta content="#ffffff" name="theme-color" />
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/screen.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-      <button class="navbar-toggler ml-auto" data-target="#collapse_target" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="collapse_target">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="index.html" tabindex="1">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="vrijdag.html" tabindex="2">Vrijdag</a>
-          </li>
-          <li class="nav-item">
-            <a href="zaterdag.html" tabindex="3">Zaterdag</a>
-          </li>
-          <li class="nav-item">
-            <a href="info.html" tabindex="4">Info</a>
-          </li>
-          <li class="nav-item">
-            <a href="inschrijvingen.html" tabindex="5">Inschrijvingen</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Make image banner -->
-    <div class="jumbotron">
-      <div class="container"></div>
-    </div>
-
-    <!-- content goes here -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-4 align-self-start">
-          <h1>Zaterdag</h1>
-        </div>
-        <div class="col-5 text-center align-self-center">
-          <p class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.* Donec ultricies* semper lobortis. Mauris facilisis tempor mattis. In ultricies lacus eget augue tempus commodo. Quisque ut turpis vel lectus vehicula dapibus eget quis ex. Aenean ac risus in tellus scelerisque dictum. Pellentesque pretium ligula quis interdum ultrices. Proin vehicula vehicula tincidunt. Sed vitae metus mauris. Etiam lacinia, augue at lobortis feugiat, turpis sapien facilisis orci, eget feugiat odio ante vitae lorem. Vestibulum dignissim pharetra odio, in tristique eros fringilla quis. Proin ante lectus, sagittis in tortor nec, varius mattis orci. Quisque sit amet placerat mi. In non risus sed augue elementum imperdiet in eget dolor. Quisque mi diam, pharetra et mattis at, ultricies aliquet ante. Ut ac quam nulla. In vitae mattis odio, ut pulvinar sapien. Proin efficitur tellus eu enim convallis tincidunt. Aenean nec laoreet turpis, vel commodo leo. In pretium tortor at tellus sodales sodales. Pellentesque elit dolor, mattis et pretium eget, faucibus nec massa.
-          </p>
+    <header class="u-max-width-none u-pt-clear ">
+      <div class="o-container">
+        <div class="c-header">
+          <div class="c-header__nav">
+            <nav class="c-nav">
+              <ul class="o-list c-nav__list ">
+                <li class="c-nav__item"><a href="index.html" class="c-nav__link" tabindex="1">Home</a></li>
+                <li class="c-nav__item"><a href="vrijdag.html" class="c-nav__link" tabindex="2">Vrijdag</a></li>
+                <li class="c-nav__item"><a href="zaterdag.html" class="c-nav__link" tabindex="3">Zaterdag</a></li>
+                <li class="c-nav__item"><a href="info.html" class="c-nav__link" tabindex="4">Info</a></li>
+                <li class="c-nav__item"><a href="inschrijvingen.html" class="c-nav__link" tabindex="5">Inschrijvingen</a></li>
+                <li class="c-nav__item"><a href="contact.html" class="c-nav__link" tabindex="6">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+
+    <div class="o-banner__image u-pt-clear"></div>
+
+    <section class="o-row o-row--xl">
+      <div class="o-container u-max-width-xl">
+        <article class="o-section o-section--xl">
+          <div class="o-layout">
+            <div class="o-layout__item u-1-of-2-bp3">
+              <h2 class="c-lead--head">Zaterdag</h2>
+            </div>
+            <div class="o-layout__item u-1-of-2-bp3">
+              <p class="c-lead c-lead--text u-mb-lg">
+                Zaterdag gaan we door met het originele idee, gebaseerd op het bekende TROS-programma “TER LAND, TER ZEE EN IN DE LUCHT”, waarbij de deelnemers met een zelf in elkaar geknutselde tobbe
+                van een schans naar beneden rijden en zo snel mogelijk de bel proberen te bereiken.
+              </p>
+              <p class="c-lead c-lead--text u-mb-lg">
+                Vele jaren werden de deelnemers nog gescheiden van de bel door een obstakel maar aangezien het de vorige editie zo een spectacel was blijven we bij ons alloude concept. Aan de start
+                worden de deelnemers naar beneden geduwd om met een degelijke snelheid van de schans (met een helling van 20°) te razen. Die schans versmalt op het einde van 2.5m naar 1.5m. Vanaf deze
+                schans glijden de deelnemers rechtstreeks in het water. Eenmaal in het sop varen/pedellen/… de deelnemers zo snel mogelijk naar de bel om zo prachtige prijzen binnen te halen. Hier
+                zullen de deelnemers echter merken dat de bel op 3.5m boven het water hangt. Aan jullie dus om een ingenieuze constructie in mekaar te zetten. Vergeet ook niet van het reglement er
+                eens op na te lezen.
+              </p>
+              <p class="c-lead c-lead--text u-mb-lg">
+                Indien je veel zin hebt om deel te nemen, maar te lui bent, te onhandig bent of in tijdsgebrek zit kan je ook deelnemen met onze eigen tobbe: de tobtobbe! Dit is een kajak die met ons
+                eigen constructie systeem te water gelaten wordt waarna jullie naar de bel (die voor dit klassement wel op de normale hoogte hangt) kunnen pedellen.
+              </p>
+              <p class="c-lead c-lead--text u-mb-lg">
+                Maar dit is nog niet alles, zowel voor als na de prijsuitreiking gaan we nog door met een tweede spetterend feestje. Voor de prijsuitreiking zullen Jordy en Gaelle, een Machels duo,
+                vele harten doen smelten moet enkele zeemzoete covers. Om de sfeer na de prijsuitreiking op te wekken zullen de mannen en vrouwen van Louie Louie enkele funky sixties beats brengen. Om
+                na het vuurwerk de sfeer te verzekeren hebben we de partyband Smashdance uitgenodigd op ons podium die onder meer bekend zijn van op de Gentse feesten. Het podium zal tegen dan bijna
+                op ontploffen staan. Om het volledig af te breken zullen eerst Linde Merckpoel en daarna Proudmich aan de draaitafel staan.
+              </p>
+              <p class="c-lead c-lead--text">
+                Voor diegene die een combi-ticket konden bemachtigen is ook de toegang voor zaterdag gratis. Indien je door stom toeval vrijdag niet aanwezig kan zijn is er nog steeds te mogelijkheid
+                binnen te geraken en dit voor een prijsje van 4 € (kinderen onder 14j gratis).   Schrijf alvast 31 augustus in jullie agenda, wij kijken alvast uit naar jullie originele constructies
+                en het feestje achteraf, hopelijk jullie ook. Tot dan!
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <!-- Footer at bottom of page -->
-    <footer class="footer">
-      <div class="footer-container container">
-        <p class="text-muted">
-          <a href="https://www.facebook.com/Tobbedansen/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/tobbedansen" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/tobbedansen/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/Tobbedansen/?ref=br_rs" target="_blank"><i class="fas fa-envelope"></i></a><br />
-          © Tobbedansen vzw, all rights reserved | Designed by Jonas De Meyer
-        </p>
-      </div>
+    <footer class="c-row__footer">
+      <a href="https://www.facebook.com/Tobbedansen/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/tobbedansen" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/tobbedansen/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/Tobbedansen/?ref=br_rs" target="_blank"><i class="fas fa-envelope"></i></a><br />
+      © Tobbedansen vzw
     </footer>
   </body>
 </html>

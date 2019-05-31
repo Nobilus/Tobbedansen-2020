@@ -19,11 +19,11 @@ var x = setInterval(function() {
   document.getElementById('countdown').innerHTML = `<div id="days" class="countdown-item">${days}d</div>
   <div id="hours" class="countdown-item">${hours}h</div>
   <div id="minutes" class="countdown-item">${minutes}m</div>
-  <div id="seconds" class="countdown-item">${seconds}s</div>`
+  <div id="seconds" class="countdown-item">${seconds}s</div>`;
 
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById('countdown').innerHTML = 'EXPIRED';
+    document.getElementById('countdown').innerHTML = 'Tobbedansen 2019 is van start gegaan!';
   }
 });

@@ -17,7 +17,30 @@ body {
 body,
 html {
   height: 100%;
+  width: 100%;
   margin: 0;
+}
+
+button {
+  border-radius: 38px;
+  line-height: 34px;
+  background: #707070;
+  color: white;
+  border-color: #707070;
+  border-style: solid;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='tel'] {
+  border-radius: 5px;
 }
 
 /* html {
@@ -36,13 +59,13 @@ html {
 */
 
 ::-moz-selection {
-  background: #e85e00;
+  background: #707070;
   color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background: #e85e00;
+  background: #707070;
   color: white;
   text-shadow: none;
 }
@@ -73,9 +96,11 @@ h1 {
 }
 
 h2 {
-  font-size: 23px;
-  line-height: 32px;
+  font-size: 30px;
+  line-height: 40px;
   margin: 0 0 24px;
+  color: #707070;
+  font-weight: normal;
 }
 
 h3 {
@@ -92,14 +117,18 @@ h6 {
   margin: 0 0 24px;
 }
 
+p {
+  font-family: montserrat;
+  color: #707070;
+}
+
 p,
 ol,
 ul,
 dl,
 table,
-address,
-figure {
-  margin: 0 0 24px;
+address {
+  margin: 0 0px;
 }
 
 ul,
@@ -155,6 +184,33 @@ a:focus {
 }
 
 /*
+    Objects: section
+    ---
+    Creates vertical whitespace between adjacent sections inside a row
+*/
+.o-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.o-section + .o-section {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .o-section--lg + .o-section--lg,
+  .o-section--xl + .o-section--xl {
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .o-section--xl + .o-section--xl {
+    margin-top: 72px;
+  }
+}
+
+/*
     Objects: Row
     ---
     Creates a horizontal row that stretches the viewport and adds padding around children
@@ -165,6 +221,75 @@ a:focus {
   padding: 24px 24px 0;
   display: flex;
   flex-direction: column;
+}
+
+/* color modifiers */
+
+.o-row--primary-x-light {
+  background-color: #f2faff;
+}
+
+.o-row--neutral-xx-dark {
+  color: #fff;
+  background: #20223a;
+}
+
+/* intro needs a larger z-index to pull the image over the next row */
+
+.o-row--intro {
+  z-index: 10;
+}
+
+/* size modifiers */
+
+.o-row--lg {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+.o-row--intro {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.o-row--xl {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .o-row {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .o-row--md {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+
+  .o-row--lg {
+    padding-top: 72px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .o-row--intro {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .o-row--xl {
+    padding-top: 96px;
+    padding-bottom: 72px;
+  }
+}
+
+.o-row--dark {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 50px;
 }
 
 /*
@@ -196,10 +321,13 @@ a:focus {
   Machelenput banner
 */
 
-.c-banner {
-}
-.c-banner__image {
-  background-image: url(../img/MachelenPut-smartphone.png);
+.o-banner__image {
+  background-image: url(../img/MachelenPut.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 38.19687092568%;
 }
 
 /*
@@ -211,6 +339,18 @@ a:focus {
 .c-row {
   position: relative;
   padding: 24px 24px 0;
+}
+
+.c-row__footer {
+  height: 50px;
+  text-align: center;
+  position: bottom;
+  background-color: #f9f9f9;
+  color: #707070;
+}
+
+.c-row__footer a {
+  color: #707070;
 }
 
 /*
@@ -357,6 +497,9 @@ a:focus {
     ---
     intro section
 */
+.c-intro__logo {
+  max-height: 225.99px;
+}
 
 /*
     Component: Lead
@@ -370,7 +513,7 @@ a:focus {
 
 .c-lead--md {
   font-size: 18px;
-  line-height: 32px;
+  line-height: 28px;
 }
 
 .c-lead--lg {
@@ -383,17 +526,45 @@ a:focus {
   line-height: 40px;
 }
 
+.c-lead--text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.c-lead--head {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.c-lead--countdown {
+  font-size: 32px;
+}
+
 @media (min-width: 768px) {
-  .c-lead--xl {
-    font-size: 41px;
-    line-height: 48px;
+  .c-lead--head {
+    font-size: 59px;
+    line-height: 75px;
+  }
+  .c-lead--text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .c-lead--countdown {
+    font-size: 68px;
   }
 }
 
 @media (min-width: 1200px) {
-  .c-lead--xl {
-    font-size: 52px;
-    line-height: 64px;
+  .c-lead--head {
+    font-size: 88px;
+    line-height: 117px;
+  }
+  .c-lead--text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .c-lead--countdown {
+    font-size: 112px;
   }
 }
 
@@ -404,20 +575,17 @@ a:focus {
 */
 
 .countdown-item {
-  /* margin-right: 25px; */
-  width: calc(100% / 4);
+  margin-right: 0.5em;
   text-align: center;
 }
 
 #countdown {
-  font-size: 38px;
   color: white;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  height: 70vh;
-  width: 70%;
-  margin: 0 auto;
+  justify-content: center;
+  align-content: flex-end;
+  margin-top: 30vh;
 }
 
 /*
@@ -431,6 +599,20 @@ a:focus {
 .c-header__nav {
   display: block;
 }
+/* 
+label {
+  margin: 0 40px 0 0;
+  display: none;
+} */
+#toggle {
+  display: none;
+}
+/* 
+@media only screen and (max-width: 500px) {
+  label {
+    display: block;
+  }
+} */
 
 /*
     Component: Nav
@@ -469,11 +651,15 @@ a:focus {
 */
 
 .u-bg-picture {
-  background-image: url('../img/MachelenPut-tablet.png');
-  size: 100%;
-  background-position: center;
+  background: url('../img/MachelenPut-tablet.png');
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
 
 @media (min-width: 1440px) {
@@ -483,6 +669,7 @@ a:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
 }
 
@@ -540,6 +727,10 @@ a:focus {
 
 .u-max-width-lg {
   max-width: 63.5em !important;
+}
+
+.u-max-width-xl {
+  max-width: 85em !important;
 }
 
 .u-max-width-none {

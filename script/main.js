@@ -1,12 +1,8 @@
-var fields = [
-  ['entry.740226251', 'entry.1096451262', 'entry.1492880318'],
-  ['entry.608569745', 'entry.259889842', 'entry.108293155'],
-  ['entry.336244403', 'entry.629190117', 'entry.1549196167']
-];
+var fields = [['entry.740226251', 'entry.1096451262', 'entry.1492880318'], ['entry.608569745', 'entry.259889842', 'entry.108293155'], ['entry.336244403', 'entry.629190117', 'entry.1549196167']];
 
 var labels = ['Voornaam*', 'Naam*', 'Geboortedatum*'];
 
-const setDatePicker = (id) => {
+const setDatePicker = id => {
   new Pikaday({
     field: document.getElementById(id),
     format: 'dd-mm-YYYY',
@@ -20,7 +16,7 @@ const setDatePicker = (id) => {
     yearRange: 100,
     firstDay: 1
   });
-}
+};
 
 const showField = () => {
   let extra = document.querySelector('#extra');
@@ -33,7 +29,7 @@ const showField = () => {
   let legend = document.createElement('legend');
   legend.textContent = `Deelnemer ${childrenLenght === 0 ? '2' : childrenLenght + 2}`;
   node.appendChild(legend);
-  
+
   for (let i in fields) {
     let div = document.createElement('div');
     let label = document.createElement('label');
@@ -60,7 +56,7 @@ const removeField = () => {
   if (extra.children.length > 0) {
     extra.removeChild(extra.lastChild);
   }
-}
+};
 
 const init = () => {
   setDatePicker('datepicker');

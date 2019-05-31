@@ -167,7 +167,7 @@ hr {
   background: LightGrey;
   margin: 0 0 24px;
 }
-
+a,
 a:visited,
 a:active {
   color: white;
@@ -657,8 +657,8 @@ u {
     Main navigation of the site
 */
 .c-nav {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .c-nav__list {

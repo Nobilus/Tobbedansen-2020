@@ -145,9 +145,13 @@ h2 {
 h3 {
   font-size: 24px;
   line-height: 32px;
-  margin: 0 0 24px;
   color: #707070;
   font-weight: normal;
+  margin: 0 !important;
+}
+h4 {
+  font-weight: normal;
+  margin: 0;
 }
 
 h4,
@@ -175,6 +179,10 @@ address {
 ul,
 ol {
   padding-left: 24px;
+}
+
+li {
+  list-style: none;
 }
 
 li ul,
@@ -208,19 +216,23 @@ hr {
   background: LightGrey;
   margin: 0 0 24px;
 }
-a,
+a {
+  color: RoyalBlue;
+  transition: all 0.1s ease-in-out;
+}
+
 a:visited,
 a:active {
-  color: white;
+  color: BlueViolet;
 }
 
 a:hover,
 a:focus {
-  color: White;
+  color: Crimson;
 }
 
 u {
-  text-decoration: none;
+  text-decoration: underline;
   border-bottom: 3px solid white;
 }
 ​
@@ -356,6 +368,15 @@ u {
   ---
   Creates a horizontal row with padding
 */
+
+/*
+  Components: info
+  ---
+  Info
+*/
+.c-info {
+  width: 100vw;
+}
 
 /*
   Components: banner
@@ -574,6 +595,10 @@ u {
   line-height: 24px;
 }
 
+.c-lead--text-info {
+  text-indent: 2em;
+}
+
 .c-lead--head {
   font-size: 32px;
   line-height: 40px;
@@ -581,6 +606,13 @@ u {
 
 .c-lead--head3 {
   font-size: 24px;
+  font-weight: bold;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+.c-lead--h4 {
+  font-size: 20px;
+  margin: 0 0 0 !important;
 }
 
 .c-lead--countdown {
@@ -600,6 +632,9 @@ u {
     font-size: 24px;
     line-height: 32px;
   }
+  .c-lead--head4 {
+    font-size: 22px;
+  }
 
   .c-lead--countdown {
     font-size: 68px;
@@ -618,6 +653,10 @@ u {
   .c-lead--head3 {
     font-size: 32px;
     line-height: 40px;
+  }
+  .c-lead--head4 {
+    font-size: 28px;
+    margin-top: 20px;
   }
   .c-lead--countdown {
     font-size: 112px;
@@ -724,6 +763,7 @@ u {
   text-decoration: none;
   display: block;
   padding: 0.5rem 1rem;
+  color: white !important;
 }
 
 .c-nav__link:hover,

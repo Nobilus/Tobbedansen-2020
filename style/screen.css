@@ -27,19 +27,13 @@ html {
 } */
 
 input.textbox-300 {
-  width: 300px;
-}
-
-fieldset label {
-  display: block;
-}
-
-fieldset {
-  display: block;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 form {
-  display: block;
+  margin: 0 0px;
+  width: 100%;
 }
 
 button {
@@ -47,19 +41,25 @@ button {
   line-height: 34px;
   background: #707070;
   color: white;
-  border-color: #707070;
   border-style: solid;
   cursor: pointer;
-  float: right;
 }
 
 legend {
-  display: none;
+  /* display: none; */
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 textarea {
   resize: none;
-  width: 300px;
+  width: 100%;
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -76,6 +76,10 @@ input[type='tel'] {
 }
 textarea {
   border-radius: 5px;
+}
+
+.checkbox-full {
+  width: 100%;
 }
 
 /* html {
@@ -139,9 +143,11 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 32px;
   margin: 0 0 24px;
+  color: #707070;
+  font-weight: normal;
 }
 
 h4,
@@ -545,6 +551,7 @@ u {
 
 .c-lead {
   position: relative;
+  color: #707070;
 }
 
 .c-lead--md {
@@ -572,6 +579,10 @@ u {
   line-height: 40px;
 }
 
+.c-lead--head3 {
+  font-size: 24px;
+}
+
 .c-lead--countdown {
   font-size: 32px;
 }
@@ -585,6 +596,11 @@ u {
     font-size: 16px;
     line-height: 24px;
   }
+  .c-lead--head3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
   .c-lead--countdown {
     font-size: 68px;
   }
@@ -598,6 +614,10 @@ u {
   .c-lead--text {
     font-size: 24px;
     line-height: 32px;
+  }
+  .c-lead--head3 {
+    font-size: 32px;
+    line-height: 40px;
   }
   .c-lead--countdown {
     font-size: 112px;

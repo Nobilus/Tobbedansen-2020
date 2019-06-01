@@ -21,6 +21,26 @@ html {
   margin: 0;
 }
 
+/* fieldset {
+  border: 0;
+  color: #707070;
+} */
+
+label.field {
+  text-align: left;
+  width: 100px;
+  float: left;
+}
+input.textbox-300 {
+  width: 300px;
+  float: left;
+}
+
+fieldset label {
+  clear: both;
+  padding: 5px;
+}
+
 button {
   border-radius: 38px;
   line-height: 34px;
@@ -28,6 +48,11 @@ button {
   color: white;
   border-color: #707070;
   border-style: solid;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -311,7 +336,7 @@ u {
 */
 
 /*
-  Objects: Grid
+  Objects: padding
   ---
   Creates a horizontal row with padding
 */

@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/screen.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet" />
-    
   </head>
   <body>
     <header class="u-max-width-none u-pt-clear ">
@@ -49,32 +48,32 @@
 
     <div class="o-banner__image u-pt-clear"></div>
 
-    <div>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe3ha_ZTHdbAqz6NvD-QRByrqsZnQIeh5_ATpknGzZd-EE4pQ/formResponse" method="POST">
-          <div>
-            <label for="">Voornaam*</label>
-            <input type="text" name="entry.1131338875" required />
-          </div>
-          <div>
-            <label for="">Naam*</label>
-            <input type="text" name="entry.1400698168" required />
-          </div>
-          <div>
-            <label for="">Email*</label>
-            <input type="email" name="entry.1982632047" required />
-          </div>
-          <div>
-            <label for="">Telefoon*</label>
-            <input type="tel" minlength="10" maxlength="10" required name="entry.1547555752" />
-          </div>
-          <div>
-            <label for="">Bericht*</label>
-            <textarea name="entry.474485181" cols="30" rows="10" required></textarea>
-          </div>
-          <button type="submit">Verstuur</button>
-        </form>
-      </div>
-    </div>
+    <form class="o-layout__item u-1-of-2-bp3" action="https://docs.google.com/forms/d/e/1FAIpQLSe3ha_ZTHdbAqz6NvD-QRByrqsZnQIeh5_ATpknGzZd-EE4pQ/formResponse" method="POST">
+      <fieldset>
+        <legend>Contact</legend>
+        <div>
+          <label class="field" for="">Voornaam</label>
+          <input type="text" class="textbox-300" name="entry.1131338875" required placeholder="voornaam" />
+        </div>
+        <div>
+          <label class="field" for="">Naam</label>
+          <input type="text" class="textbox-300" name="entry.1400698168" required placeholder="naam" />
+        </div>
+        <div>
+          <label class="field" for="">Email</label>
+          <input type="email" class="textbox-300" name="entry.1982632047" required placeholder="tobbedansen@mail.com" />
+        </div>
+        <div>
+          <label class="field" for="">Telefoon</label>
+          <input type="tel" class="textbox-300" minlength="10" maxlength="10" required name="entry.1547555752" placeholder="0412345678" />
+        </div>
+        <div>
+          <label class="field" for="">Bericht</label>
+          <textarea class="textbox-300" name="entry.474485181" cols="30" rows="10" required placeholder="Type hier uw bericht..."></textarea>
+        </div>
+        <button type="submit">Verstuur</button>
+      </fieldset>
+    </form>
 
     <!-- Footer at bottom of page -->
     <footer class="c-row__footer">

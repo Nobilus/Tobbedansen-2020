@@ -375,7 +375,7 @@ u {
   Info
 */
 .c-info {
-  width: 100vw;
+  width: 40vw;
 }
 
 /*
@@ -405,7 +405,7 @@ u {
 }
 
 .c-row__footer {
-  height: 50px;
+  max-height: 100%;
   text-align: center;
   position: bottom;
   background-color: #f9f9f9;
@@ -414,6 +414,7 @@ u {
 
 .c-row__footer a {
   color: #707070;
+  padding: 5px;
 }
 
 /*
@@ -610,9 +611,8 @@ u {
   margin-top: 1em !important;
   margin-bottom: 1em !important;
 }
-.c-lead--h4 {
+.c-lead--head4 {
   font-size: 20px;
-  margin: 0 0 0 !important;
 }
 
 .c-lead--countdown {

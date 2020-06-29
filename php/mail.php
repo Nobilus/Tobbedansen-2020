@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers = "From: $email\n";
         $sent = mail($to, $subject, $bericht, $headers);
         if ($sent) {
-            header("Location: ./index.html");
+            header("Location: ../index.html");
         } else {
 ?><html>
         <head>
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </body>
         </html>
         <?php
-            header("Location: ./index.html");
+            header("Location: ../index.html");
         }
     }
 } else { 

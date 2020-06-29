@@ -57,7 +57,7 @@
         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
         $sent = mail($email, $subject, $bericht, $headers);
         if ($sent) {
-            header("Location: ./index.html");
+            header("Location: ../index.html");
         } else {
 ?><html>
         <head>
@@ -69,6 +69,6 @@
         </body>
         </html>
         <?php
-            header("Location: ./index.html");
+            header("Location: ../index.html");
         }
 }?>

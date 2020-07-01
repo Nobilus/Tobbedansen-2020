@@ -1,4 +1,8 @@
-var fields = [['entry.740226251', 'entry.1096451262', 'entry.1492880318'], ['entry.608569745', 'entry.259889842', 'entry.108293155'], ['entry.336244403', 'entry.629190117', 'entry.1549196167']];
+var fields = [
+  ['d2Voornaam', 'd2Naam', 'd2Geboortedatum'],
+  ['d3Voornaam', 'd3Naam', 'd3Geboortedatum'],
+  ['d4Voornaam', 'd4Naam', 'd4Geboortedatum']
+];
 var labels = ['Voornaam', 'Naam', 'Geboortedatum'];
 const setDatePicker = id => {
   new Pikaday({
@@ -27,17 +31,13 @@ const showField = () => {
   node.appendChild(legend);
   for (let i in fields) {
     let div = document.createElement('div');
-    // let label = document.createElement('label');
     let input = document.createElement('input');
-    // label.textContent = labels[i];
-    // label.setAttribute('class', 'c-lead c-lead--text');
-    input.setAttribute('id', fields[childrenLenght][i]);
+    input.setAttribute('type', 'text');
     input.setAttribute('class', 'textbox-300');
     input.setAttribute('name', fields[childrenLenght][i]);
-    input.setAttribute('type', 'text');
-    input.setAttribute('required', true);
     input.setAttribute('placeholder', labels[i]);
-    // div.appendChild(label);
+    input.setAttribute('required', true);
+    input.setAttribute('id', fields[childrenLenght][i]);
     div.appendChild(input);
     node.appendChild(div);
   }

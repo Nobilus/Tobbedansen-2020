@@ -57,36 +57,32 @@
           <div class="o-layout">
             <div class="o-layout__item u-1-of-2-bp3"><h2 class="c-lead c-lead--head">Inschrijvingen</h2></div>
             <div class="o-layout__item u-1-of-2-bp3">
-              <form action="inschrijving.php" method="POST">
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfTsfhlNtihs1ksb4VaKDfJrW3sC6coOjpmbv6nJb6dnIKXmA/formResponse" method="POST">
                 <legend>Deelnemer 1</legend>
-                <input type="text" class="textbox-300" name="d1Voornaam" placeholder="Voornaam" required />
-                <input type="text" class="textbox-300" name="d1Naam" placeholder="Naam" required />
-                <input type="email" class="textbox-300" name="d1Email" placeholder="E-mail" required />
-                <input type="text" class="textbox-300" name="d1Gemeente" placeholder="Gemeente" required />
-                <input type="text" class="textbox-300" name="d1Postcode" placeholder="Postcode" required pattern="[0-9]{4}" />
-                <input type="text" class="textbox-300" name="d1Straat_en_nr" placeholder="Straat & nr" required />
-                <input type="tel" class="textbox-300" name="d1Telnr" placeholder="Telefoonnummer" maxlength="10" pattern="[0-9]{10}" required />
-                <input type="text" class="textbox-300" name="d1Geboortedatum" id="datepicker" autocomplete="off" placeholder="Geboortedatum" required readonly />
-                <input type="text" class="textbox-300" name="d1Geboorteplaats" placeholder="Geboorteplaats" required />
+                <input type="text" class="textbox-300" name="entry.1590447953" placeholder="Voornaam" required />
+                <input type="text" class="textbox-300" name="entry.609469685" placeholder="Naam" required />
+                <input type="email" class="textbox-300" name="entry.1256978498" placeholder="E-mail" required />
+                <input type="text" class="textbox-300" name="entry.1052038244" placeholder="Gemeente" required />
+                <input type="number" class="textbox-300" name="entry.1647528450" placeholder="Postcode" required />
+                <input type="text" class="textbox-300" name="entry.1364363486" placeholder="Straat & nr" required />
+                <input type="number" class="textbox-300" placeholder="Telefoonnummer" name="entry.1319474406" maxlength="10" required />
+                <input type="text" class="textbox-300" id="datepicker" name="entry.438875400" autocomplete="off" placeholder="Geboortedatum" required readonly />
+                <input type="text" class="textbox-300" name="entry.1621228601" placeholder="Geboorteplaats" required />
                 <div id="extra"></div>
-
-                <div class="o-form-controls">
-                  <button type="button" id="btnAdd">Deelnemer toevoegen</button>
-                  <button type="button" id="btnRemove">Deelnemer verwijderen</button>
-                </div>
+                <button type="button" id="btnAdd">Deelnemer toevoegen</button>
+                <button type="button" id="btnRemove">Deelnemer verwijderen</button>
                 <legend>Tobbe info</legend>
-                <input type="text" class="textbox-300" name="naamTobbe" placeholder="Naam tobbe" required />
-                <input type="text" class="textbox-300" name="naamVereniging" placeholder="Vereniging (optioneel)" />
-                <input type="checkbox" name="anderKlassement" id="anderKlassement" />
-                <label class="c-lead c-lead-sm checkbox-full" for="anderKlassement">Ik schrijf me in onder het skate-, longboard of rolschaats reglement </label>
+                <input type="text" class="textbox-300" name="entry.1437388782" placeholder="Naam tobbe" required />
+                <input type="text" class="textbox-300" name="entry.1534265697" placeholder="Vereniging (optioneel)" />
+                <input type="checkbox" name="entry.184036302" id="entry.184036302" /> <label class="c-lead c-lead-sm checkbox-full" for="entry.184036302">Aanvinken als je met een kajak gaat</label>
                 <br />
                 <input type="checkbox" id="reglement" required />
                 <label class="c-lead c-lead-sm checkbox-full" for="reglement"
-                  >Ik heb <u><a target="_blank" rel="noopener noreferrer" href="https://tobbedansen.be/assets/Reglement.pdf"> het reglement</a></u> gelezen en ga hier mee akkoord bij
+                  >Ik heb <u><a target="_blank" rel="noopener noreferrer" href="http://jonasdemeyer.be/tobbedansen/assets/Reglement2019"> het reglement</a></u> gelezen en ga hier mee akkoord bij
                   inschrijving.</label
                 >
                 <br />
-                <button disabled type="submit" id="btnInschrijven">Schrijf me in</button>
+                <button type="submit" id="btnInschrijven">Schrijf me in</button>
               </form>
             </div>
           </div>

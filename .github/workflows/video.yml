@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      -master
+      
+jobs:
+  create-video:
+    needs: build
+    runs-on: ubuntu-latest
+    if: ${{github.ref == 'refs/heads/develop'}}
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: install ffmpeg
+        run: |
+          sudo apt-get install --no-upgrade ffmpeg -qq
+      - name: get ffmpeg  path
+        id: get-ffmpeg-path
+        run: echo "::set-output name=ffmpeg::$(which ffmpeg)"
+      - name: get chrome path
+        id: get-chrome-path
+        run: echo "::set-output name=chrome::$(which google-chrome-stable)"
+      - name: test the github action
+        uses: jonas-d-m/research-project@v1.1.0
+        with:
+          ffmpeg-path: ${{ steps.get-ffmpeg-path.outputs.ffmpeg}}
+          chrome-path: ${{steps.get-chrome-path.outputs.chrome}}

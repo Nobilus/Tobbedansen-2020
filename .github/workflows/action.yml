@@ -20,7 +20,7 @@ jobs:
         id: get-chrome-path
         run: echo "::set-output name=chrome::$(which google-chrome-stable)"
       - name: test the github action
-        uses: jonas-d-m/research-project@v1.1.1
+        uses: jonas-d-m/research-project@v1.1.2
         with:
           ffmpeg-path: ${{ steps.get-ffmpeg-path.outputs.ffmpeg}}
           chrome-path: ${{steps.get-chrome-path.outputs.chrome}}

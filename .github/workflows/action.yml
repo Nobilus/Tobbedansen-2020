@@ -1,3 +1,4 @@
+name: Project video
 on:
   push:
     branches:

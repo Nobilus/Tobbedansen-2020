@@ -2,8 +2,8 @@ name: Project video
 on:
   push:
     branches:
-      -master
-      
+      - master
+
 jobs:
   create-video:
     runs-on: ubuntu-latest

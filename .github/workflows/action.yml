@@ -7,7 +7,6 @@ on:
 jobs:
   create-video:
     runs-on: ubuntu-latest
-    if: ${{github.ref == 'refs/heads/develop'}}
     steps:
       - name: checkout repo
         uses: actions/checkout@v2

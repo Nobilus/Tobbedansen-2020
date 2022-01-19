@@ -32,7 +32,9 @@ jobs:
         id: get-chrome-path
         run: echo "::set-output name=chrome::$(which google-chrome-stable)"
       - name: list dir
-        run: ls -a
+        run: |
+          ls -a
+          pwd
       - name: test the github action
         uses: jonas-d-m/research-project@v1.1.6
         with:

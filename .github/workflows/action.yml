@@ -13,6 +13,10 @@ jobs:
       - name: install ffmpeg
         run: |
           sudo apt-get install --no-upgrade ffmpeg -qq
+      - name: install pm2
+        run: npm install pm2 --save
+      - name: install pm2 typescript
+        run: pm2 install typescript
       - name: get ffmpeg  path
         id: get-ffmpeg-path
         run: echo "::set-output name=ffmpeg::$(which ffmpeg)"

@@ -14,7 +14,7 @@ jobs:
         run: |
           sudo apt-get install --no-upgrade ffmpeg -qq
       - name: install pm2
-        run: npm install pm2 --save
+        run: npm install pm2@latest -g
       - name: install pm2 typescript
         run: pm2 install typescript
       - name: get ffmpeg  path

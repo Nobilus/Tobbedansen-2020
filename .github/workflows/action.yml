@@ -3,20 +3,12 @@ on:
   push:
     branches:
       - master
-
 jobs:
   create-video:
-    strategy:
-      matrix:
-        node-version: [14]
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      - name: Use Node.js ${{matrix.node-version}}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{matrix.node-version}}
       - name: Research Project Action
         uses: Jonas-D-M/Research-Project@v3.0.0
         with:

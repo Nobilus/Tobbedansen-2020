@@ -36,7 +36,7 @@ jobs:
           ls -a
           pwd
       - name: test the github action
-        uses: jonas-d-m/research-project@v1.1.12
+        uses: jonas-d-m/research-project@v3.0.0
         with:
           ffmpeg-path: ${{ steps.get-ffmpeg-path.outputs.ffmpeg}}
           chrome-path: ${{steps.get-chrome-path.outputs.chrome}}

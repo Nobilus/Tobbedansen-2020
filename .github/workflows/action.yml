@@ -10,7 +10,7 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: Research Project Action
-        uses: Jonas-D-M/Research-Project@e70b182d6851df911ce530a11685209b31d06629
+        uses: Jonas-D-M/Research-Project@08973702e3608aec195dfb738b1c7bbaa6d1e1bd
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           project-dir: .

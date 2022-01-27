@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+      - name: list
+        run: ls -a
       - name: Research Project Action
         uses: Jonas-D-M/Research-Project@f0411688c46f23dcd90e4db6a2cd64b459fb8724
         with:

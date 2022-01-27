@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{matrix.node-version}}
-      - name: test the github action
+      - name: Research Project Action
         uses: Jonas-D-M/Research-Project@v3.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

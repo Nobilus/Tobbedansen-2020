@@ -8,35 +8,11 @@ jobs:
   create-video:
     timeout-minutes: 10
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14]
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      - name: Use Node.js ${{matrix.node-version}}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{matrix.node-version}}
-      - name: install ffmpeg
-        run: |
-          sudo apt-get install --no-upgrade ffmpeg -qq
-      - name: install pm2
-        run: npm install pm2@latest -g
-      - name: install pm2 typescript
-        run: pm2 install typescript
-      - name: get ffmpeg  path
-        id: get-ffmpeg-path
-        run: echo "::set-output name=ffmpeg::$(which ffmpeg)"
-      - name: get chrome path
-        id: get-chrome-path
-        run: echo "::set-output name=chrome::$(which google-chrome-stable)"
-      - name: list dir
-        run: |
-          ls -a
-          pwd
       - name: test the github action
         uses: jonas-d-m/research-project@v3.0.0
         with:
-          ffmpeg-path: ${{ steps.get-ffmpeg-path.outputs.ffmpeg}}
-          chrome-path: ${{steps.get-chrome-path.outputs.chrome}}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          project-dir: ./

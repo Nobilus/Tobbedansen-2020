@@ -6,7 +6,6 @@ on:
 
 jobs:
   create-video:
-    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
@@ -15,4 +14,4 @@ jobs:
         uses: jonas-d-m/research-project@v3.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          project-dir: ./
+          project-dir: .

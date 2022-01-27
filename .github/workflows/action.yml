@@ -6,10 +6,17 @@ on:
 
 jobs:
   create-video:
+    strategy:
+      matrix:
+        node-version: [14]
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+      - name: Use Node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{matrix.node-version}}
       - name: test the github action
         uses: jonas-d-m/research-project@v3.0.0
         with:

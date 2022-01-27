@@ -15,4 +15,3 @@ jobs:
         uses: Jonas-D-M/Research-Project@v7.1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          project-dir: ./

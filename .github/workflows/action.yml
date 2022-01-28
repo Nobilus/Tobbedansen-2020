@@ -12,7 +12,7 @@ jobs:
       - name: list
         run: ls -a
       - name: Research Project Action
-        uses: Jonas-D-M/Research-Project@v11.1.0
+        uses: Jonas-D-M/Research-Project@v12.1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           project-dir: ${{ github.workspace }}

@@ -9,16 +9,5 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      - name: list
-        run: ls -a
-      - name: install deps
-        run: |
-          npm install pm2 -g
-          sudo pm2 update
-          pm2 install typescript
-          sudo apt install ffmpeg
       - name: Research Project Action
-        uses: Jonas-D-M/Research-Project@v20.1.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          project-dir: ${{ github.workspace }}
+        uses: Jonas-D-M/Research-Project@v21.1.0

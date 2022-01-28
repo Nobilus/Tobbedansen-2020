@@ -18,7 +18,7 @@ jobs:
           pm2 install typescript
           sudo apt install ffmpeg
       - name: Research Project Action
-        uses: Jonas-D-M/Research-Project@v19.1.0
+        uses: Jonas-D-M/Research-Project@v20.1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           project-dir: ${{ github.workspace }}

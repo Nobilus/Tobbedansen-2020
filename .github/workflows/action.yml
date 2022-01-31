@@ -10,4 +10,4 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: Research Project Action
-        uses: Jonas-D-M/Research-Project@v21.1.0
+        uses: Jonas-D-M/Research-Project@v22.0.0

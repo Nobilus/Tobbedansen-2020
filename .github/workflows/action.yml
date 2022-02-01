@@ -10,5 +10,5 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: Research Project Action
-        uses: Jonas-D-M/Research-Project@b977b0641bdaf82b09d634fb3cbdb40328bc1ed8
+        uses: Jonas-D-M/Research-Project@0aaa6e9b5ac46e5fe872f013e5edfc34a532fc2a
         
